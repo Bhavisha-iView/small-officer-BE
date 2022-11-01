@@ -11,7 +11,7 @@ var sequelize = require('./config/connectdb.js');
 var Reg = require("./models/registration.js");
 var logger = require("./logger.js")
 var app = express();
-var port = process.env.PORT;
+var port = process.env.PORT || 8000;
 var swaggerJsDoc = require("swagger-jsdoc");
 var swaggerUi = require("swagger-ui-express");
 
